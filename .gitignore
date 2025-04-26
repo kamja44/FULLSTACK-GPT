@@ -2,3 +2,5 @@ env/
 .idea/
 .env
 cache.db
+files/
+.cache/
