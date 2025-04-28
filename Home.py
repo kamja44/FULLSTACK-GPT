@@ -1,20 +1,25 @@
 import streamlit as st
-from langchain.prompts import PromptTemplate
-from datetime import datetime
 
-today = datetime.today().strftime("%H:%M:%S")
+st.set_page_config(
+    page_title="FullstackGPT Home",
+    page_icon="🍖"
+)
 
-st.title(today)
+st.title("Fullstack Home")
 
-st.write("Hello")
-a = [1,2,3,4]
-d = {"x": 1}
-p = PromptTemplate.from_template("xxxx")
-
-a
-d
-
-st.selectbox("Choose your model", ("GPT-3", "GPT-4"))
-
-value = st.slider('temperature', min_value=0.1, max_value=1.0)
-st.write(value)
+st.markdown(
+     """
+ # Hello!
+             
+ Welcome to my FullstackGPT Portfolio!
+             
+ Here are the apps I made:
+             
+ - [ ] [DocumentGPT](/DocumentGPT)
+ - [ ] [PrivateGPT](/PrivateGPT)
+ - [ ] [QuizGPT](/QuizGPT)
+ - [ ] [SiteGPT](/SiteGPT)
+ - [ ] [MeetingGPT](/MeetingGPT)
+ - [ ] [InvestorGPT](/InvestorGPT)
+ """
+ )
