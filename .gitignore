@@ -4,3 +4,4 @@ env/
 cache.db
 files/
 .cache/
+.streamlit/
